@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Kristy Ann Cam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="site-name">Kristy Ann Cam</div>
+    <div class="hamburger" id="menuToggle">☰</div>
+    <nav class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="padding: 2rem;">
+    <section style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: stretch;">
+      <!-- Photo -->
+      <div style="flex: 1; min-width: 300px;">
+        <img src="resumepic.jpg" alt="Kristy Ann Cam" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;" />
+      </div>
+
+      <!-- Textbox (shortened) -->
+      <div style="flex: 1; min-width: 300px; display: flex; align-items: center;">
+        <div class="giant-textbox" style="max-height: 400px; overflow: auto;">
+          <h1 class="typewriter">About Me</h1>
+          <p>Hi! I’m Kristy, a rising senior at
+            <a href="https://msmary.edu/" target="_blank">Mount St. Mary’s University</a>
+            majoring in <strong>Computer Science & Cybersecurity</strong>. I’m passionate
+            about technology and applying my skills to solve real-world problems. I currently work as an IT Student Tech providing support, while balancing a full academic load. Outside of school, I love history and storytelling through tech.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Kristy Ann Cam | <a href="mailto:kristyanncam1@gmail.com">Email Me</a></p>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- Mobile menu script -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    menuToggle.addEventListener('click', () => {
+      mobileNav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

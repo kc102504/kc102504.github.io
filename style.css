@@ -1,0 +1,221 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0;
+  background: url('backgroundgif.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+a {
+  color: #9caf88; /* sage green for links */
+  text-decoration: none;
+}
+
+/* Remove hover styles from links */
+a:hover {
+  text-decoration: none;
+  color: #9caf88; /* Keep the same color on hover */
+}
+
+/* Giant Textbox Around All Content */
+.giant-textbox {
+  background-color: #f9c8d2; /* light pink background */
+  border: 5px solid #f9c8d2; /* pink border */
+  padding: 3rem;
+  margin: 2rem;
+  border-radius: 15px;
+}
+
+/* Header */
+.header {
+  background-color: rgba(156, 175, 136, 0.9); /* transparent sage green */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 2em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  color: white;
+}
+
+.site-name {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #9caf88;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  z-index: 1000;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-nav ul li {
+  margin: 0.5em 0;
+}
+
+.mobile-nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.mobile-nav.show {
+  display: block;
+}
+
+/* Hero Section with Typewriter Effect */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-block {
+  max-width: 800px;
+  padding: 2em;
+  background-color: #f9c8d2; /* light pink background */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* optional: adds slight shadow */
+}
+
+h1.typewriter {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #fff;
+  animation: typing 4s steps(40) 1s 1 normal both, blink 0.75s step-end infinite;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.cta-button {
+  background-color: #9caf88;
+  color: white;
+  padding: 0.75em 1.5em;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Remove hover effect for cta-button */
+.cta-button:hover {
+  background-color: #9caf88; /* Keep the same background color */
+}
+
+/* Footer */
+.footer {
+  background-color: #9caf88; /* sage green */
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+  color: white;
+}
+
+/* Ensure the email link is styled correctly */
+footer a {
+  color: #fff; /* white color for email link */
+  text-decoration: none; /* removes underline */
+  font-weight: bold; /* makes it stand out */
+}
+
+/* Remove hover underline from email link */
+footer a:hover {
+  text-decoration: none;
+  color: #fff; /* Keep the same color */
+}
+
+.social-links a {
+  color: white;
+  margin: 0 1em;
+}
+
+/* Remove hover effect for social links */
+.social-links a:hover {
+  text-decoration: none;
+  color: white; /* Keep the same color */
+}
+
+/* Typewriter Animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Bio Section Layout (Photo on Left, Text on Right) */
+.bio-container {
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  align-items: center;
+  padding: 2em;
+  gap: 2em; /* Adds some space between the image and text */
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+.left-panel {
+  flex: 1;
+  max-width: 400px; /* Limits the image size */
+}
+
+.photo-box {
+  border: 5px solid #f9c8d2; /* Light pink border around the photo */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.visual {
+  width: 100%; /* Makes image responsive */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right-panel {
+  flex: 2;
+  max-width: 600px;
+}
+
+.right

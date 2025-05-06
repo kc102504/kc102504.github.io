@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Kristy Ann Cam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="site-name">Kristy Ann Cam</div>
+    <div class="hamburger" id="menuToggle">☰</div>
+    <nav class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-layout">
+    <!-- Hero Section with Typewriter Effect -->
+    <section class="hero">
+      <div class="text-block">
+        <h1 class="typewriter">Welcome!</h1>
+        <p>Welcome to my professional website! Here, you can find more about me, my resume, blog posts, and forms of contact!</p>
+        <p>I’m passionate about digital security, technology, and using my skills to make a positive impact. Explore this site to learn more about me and the work I’m doing!</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Kristy Ann Cam | <a href="mailto:kristyanncam1@gmail.com" class="email-link">Email Me</a></p>
+    <div class="social-links">
+      <a href="https://github.com/kc102504" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/kristy-cam-661493253 target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- Mobile menu script -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    menuToggle.addEventListener('click', () => {
+      mobileNav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

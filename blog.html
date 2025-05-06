@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | Kristy Ann Cam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="site-name">Kristy Ann Cam</div>
+    <div class="hamburger" id="menuToggle">☰</div>
+    <nav class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-layout">
+    <section class="resume-section">
+      <div class="giant-textbox">
+        <h1 class="typewriter">Blog</h1>
+
+        <p><strong>📅 April 2025:</strong> Just finished a mock penetration test comparing cloud providers in a secure lab! Stay tuned for insights. 💻</p>
+
+        <p><strong>💡 Resource Highlight:</strong> For tech inspiration, check out the 
+          <a href="https://www.cyberseek.org/pathway.html" target="_blank">CyberSeek Career Pathway</a>.
+        </p>
+
+        <p>More blog entries coming soon!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Kristy Ann Cam | <a href="mailto:kristyanncam1@gmail.com" class="email-link">Email Me</a></p>
+    <div class="social-links">
+      <a href="https://github.com/KristyAnnCam" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/kristy-cam-661493253/" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('mobileNav').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
